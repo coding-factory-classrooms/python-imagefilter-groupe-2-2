@@ -27,5 +27,3 @@ cv2.imwrite('assets/output/dilateArouf.jpg', dilateImg)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
