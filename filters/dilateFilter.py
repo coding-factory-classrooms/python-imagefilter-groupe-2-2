@@ -2,7 +2,7 @@ import cv2
 import Filesystem
 import numpy as np
 
-input_path = '../assets/imgs/'
+input_path = 'assets/imgs/'
 output_path = 'assets/output/'
 
 

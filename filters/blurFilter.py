@@ -3,7 +3,7 @@ import Filesystem
 
 
 
-input_path = '../assets/imgs/'
+input_path = 'assets/imgs/'
 output_path = 'assets/output/'
 
 def filter(filename):

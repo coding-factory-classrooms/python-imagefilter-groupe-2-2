@@ -1,10 +1,11 @@
 import cv2
 import Filesystem
 
-input_path = '../assets/imgs/'
+input_path = 'assets/imgs/'
 output_path = 'assets/output/'
 
 def filter(filename):
+    print(input_path + filename)
     fileExist = Filesystem.isFileValid(input_path + filename)
     if fileExist == True:
         filtername = 'gray_'
