@@ -3,6 +3,7 @@ import os
 from filters import dilateFilter, blurFilter, greyfilter, erodeFilter
 import numpy as np
 import sys
+import re
 
 
 args = sys.argv
@@ -32,17 +33,17 @@ for i in range(0, len(args)):
             effect_name = effect_parameters[0]
 
             try:
-                if effect_parameters[1] == [0-9]:
+                if re.match('[0-9]+', effect_parameters[1]):
                     effect_value = int(effect_parameters[1])
 
                     # Manage negative error
                     if effect_value < 0:
-                        print(f"La valeur attendue pour l'effet {effect_name} doit être positive, nous avons donc changé votre valeur de {effect_value} à {effect_value * -1} ")
+                        print(f"Expected value for {effect_name} has to be positive (>0), so we changed your value from {effect_value} to {effect_value * -1} ")
                         effect_value *= -1
 
                     # Manage pair value error
                     if effect_value % 2 == 0:
-                        print(f"La valeur attendue pour l'effet {effect_name} doit être impaire, nous avons donc changé votre valeur de {effect_value} à {effect_value + 1} ")
+                        print(f"Expected value for {effect_name} has to be odd, so we changed your value from {effect_value} to {effect_value + 1} ")
                         effect_value += 1
 
                     # Input values in dict as key = effect_name and value = effect_value
