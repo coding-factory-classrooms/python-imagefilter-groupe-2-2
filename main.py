@@ -1,16 +1,17 @@
-# This is a sample Python script.
+import cv2
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+image = cv2.imread('assets/imgs/arouf.jpg')
+grayImg = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+blurImg = cv2.GaussianBlur(image,(11,11),0)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# cv2.imshow('Original image', image)
+# cv2.imshow('Gray image', grayImg)
+# cv2.imshow('Blurred image', blurImg)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+cv2.imwrite('assets/output/grayArouf.jpg', grayImg)
+
+cv2.imwrite('assets/output/blurredArouf.jpg', blurImg)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
