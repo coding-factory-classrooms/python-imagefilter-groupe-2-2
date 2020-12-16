@@ -10,7 +10,6 @@ blurImg = cv2.GaussianBlur(image,(11,11),0)
 # cv2.imshow('Blurred image', blurImg)
 
 cv2.imwrite('assets/output/grayArouf.jpg', grayImg)
-
 cv2.imwrite('assets/output/blurredArouf.jpg', blurImg)
 
 cv2.waitKey(0)
