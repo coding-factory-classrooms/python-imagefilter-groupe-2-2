@@ -15,8 +15,8 @@ def filter(filename, value):
                 image = cv2.imread(input_path + filename)
                 blurImg = cv2.GaussianBlur(image, (value, value), 0)
                 cv2.imwrite(output_path + filtername + filename, blurImg)
-            except cv2.error as e:
-                print("Your File is not an image")
+            except cv2.error:
+                print(f"Your file={filename} is not an image")
         else:
             print(f"Your input value was not referenced so, cannot apply blur filter")
     else:

@@ -17,8 +17,8 @@ def filter(filename, value):
                 dilateImg = cv2.dilate(image, kernel, iterations=0)
                 cv2.imwrite(output_path + filtername + filename, dilateImg)
 
-            except cv2.error as e:
-                print("Your File is not an image")
+            except cv2.error:
+                print(f"Your file={filename} is not an image")
         else:
             print("Your input value was not referenced so, cannot apply dilate filter")
 
