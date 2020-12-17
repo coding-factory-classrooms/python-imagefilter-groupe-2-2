@@ -1,6 +1,6 @@
 import cv2
 import os
-from filters import dilateFilter, blurFilter, greyfilter
+from filters import dilateFilter, blurFilter, greyfilter, ZeTeam
 import directories
 import sys
 import re
@@ -96,7 +96,6 @@ try:
             cv2.imwrite(output_directory + file_name, new_file)
             input_path = output_directory
 
-
             for key in dict_effects:
                 if key == "blur":
                     blurFilter.filter(file, int(dict_effects[key]), output_directory)
@@ -106,6 +105,9 @@ try:
 
                 if key == "grayscale":
                     greyfilter.filter(file, output_directory)
+
+                if key == "zeteam":
+                    ZeTeam.show_the_team(file, output_directory)
 
         except cv2.error:
             log.wrong_file(file)
