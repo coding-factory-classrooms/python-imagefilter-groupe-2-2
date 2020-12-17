@@ -1,7 +1,7 @@
 import cv2
 import os
 from filters import dilateFilter, blurFilter, greyfilter, erodeFilter
-import numpy as np
+import directories
 import sys
 import re
 
@@ -13,13 +13,13 @@ for i in range(0, len(args)):
     if arg == '-i':
 
         input_directory = (args[i + 1]+"/")
-        print(input_directory)
+        #print(input_directory)
         # List of files
         files = os.listdir(input_directory)
 
     if arg == '-o':
-        output = (args[i + 1]+"/")
-        # print(output)
+        output_directory = (args[i + 1] + "/")
+        directories.create_directory(output_directory)
 
     if arg == '--filters':
         # Get arguments from command line
@@ -60,7 +60,7 @@ for i in range(0, len(args)):
 for file in files:
     try:
         new_file = cv2.imread(input_directory+file)
-        cv2.imwrite(output+"new_"+file, new_file)
+        cv2.imwrite(output_directory + "new_" + file, new_file)
     except cv2.error:
         print(f"Your file={file} is not an image")
 
