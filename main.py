@@ -5,12 +5,31 @@ import directories
 import sys
 import re
 import log
+import config
 
 
 args = sys.argv
 dict_effects = {}
 for i in range(0, len(args)):
     arg = args[i]
+
+
+    if arg == '--config-file':
+        try:
+            config_file = args[i+1]
+            general_settings = config.get_general_settings(config_file)
+            input_directory = config.get_input_directory(general_settings)
+            output_directory = config.get_output_directory(general_settings)
+            dict_effects = config.get_filter_dict(config_file)
+        except IndexError as e:
+            print('You did not enter an input folder')
+        try:
+            # List of files
+            files = os.listdir(input_directory)
+        except FileNotFoundError as e:
+            print(f"Specified directory path cannot be found: {input_directory} ")
+
+
     if arg == '-i':
 
         input_directory = (args[i + 1]+"/")

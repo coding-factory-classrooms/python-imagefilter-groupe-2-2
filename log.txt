@@ -142,3 +142,65 @@
 2020/12/17 11:35:59 the new_zizou.jpg file has been modified by Blur effects
 2020/12/17 11:35:59 the new_zizou.jpg file has been modified by Dilate effects
 2020/12/17 11:35:59 the new_zizou.jpg file has been modified by Gray effects
+2020/12/17 15:28:40 Your file=arouf.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:28:40 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:28:40 Your file=kekra.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:28:40 Your file=robin.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:28:40 Your file=zizou.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:29:05 Your file=arouf.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:29:05 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:29:05 Your file=kekra.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:29:05 Your file=robin.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:29:05 Your file=zizou.jpg is not an image. Cannot apply any filter on it
+2020/12/17 15:30:23 the arouf.jpg file has been modified by Blur effects
+2020/12/17 15:30:23 the arouf.jpg file has been modified by Gray effects
+2020/12/17 15:30:23 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 15:30:23 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:30:23 the kekra.jpg file has been modified by Blur effects
+2020/12/17 15:30:23 the kekra.jpg file has been modified by Gray effects
+2020/12/17 15:30:23 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 15:30:23 the robin.jpg file has been modified by Blur effects
+2020/12/17 15:30:23 the robin.jpg file has been modified by Gray effects
+2020/12/17 15:30:23 the robin.jpg file has been modified by Dilate effects
+2020/12/17 15:30:23 the zizou.jpg file has been modified by Blur effects
+2020/12/17 15:30:23 the zizou.jpg file has been modified by Gray effects
+2020/12/17 15:30:23 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 15:38:10 the arouf.jpg file has been modified by Blur effects
+2020/12/17 15:38:10 the arouf.jpg file has been modified by Gray effects
+2020/12/17 15:38:10 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 15:38:10 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:38:10 the kekra.jpg file has been modified by Blur effects
+2020/12/17 15:38:10 the kekra.jpg file has been modified by Gray effects
+2020/12/17 15:38:10 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 15:38:10 the robin.jpg file has been modified by Blur effects
+2020/12/17 15:38:10 the robin.jpg file has been modified by Gray effects
+2020/12/17 15:38:10 the robin.jpg file has been modified by Dilate effects
+2020/12/17 15:38:10 the zizou.jpg file has been modified by Blur effects
+2020/12/17 15:38:10 the zizou.jpg file has been modified by Gray effects
+2020/12/17 15:38:10 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 15:38:44 the arouf.jpg file has been modified by Blur effects
+2020/12/17 15:38:44 the arouf.jpg file has been modified by Gray effects
+2020/12/17 15:38:44 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 15:38:44 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:38:44 the kekra.jpg file has been modified by Blur effects
+2020/12/17 15:38:44 the kekra.jpg file has been modified by Gray effects
+2020/12/17 15:38:44 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 15:38:44 the robin.jpg file has been modified by Blur effects
+2020/12/17 15:38:44 the robin.jpg file has been modified by Gray effects
+2020/12/17 15:38:44 the robin.jpg file has been modified by Dilate effects
+2020/12/17 15:38:45 the zizou.jpg file has been modified by Blur effects
+2020/12/17 15:38:45 the zizou.jpg file has been modified by Gray effects
+2020/12/17 15:38:45 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 15:39:49 the arouf.jpg file has been modified by Blur effects
+2020/12/17 15:39:49 the arouf.jpg file has been modified by Gray effects
+2020/12/17 15:39:49 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 15:39:49 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/17 15:39:49 the kekra.jpg file has been modified by Blur effects
+2020/12/17 15:39:49 the kekra.jpg file has been modified by Gray effects
+2020/12/17 15:39:49 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 15:39:49 the robin.jpg file has been modified by Blur effects
+2020/12/17 15:39:49 the robin.jpg file has been modified by Gray effects
+2020/12/17 15:39:49 the robin.jpg file has been modified by Dilate effects
+2020/12/17 15:39:49 the zizou.jpg file has been modified by Blur effects
+2020/12/17 15:39:49 the zizou.jpg file has been modified by Gray effects
+2020/12/17 15:39:49 the zizou.jpg file has been modified by Dilate effects
