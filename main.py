@@ -15,11 +15,7 @@ for i in range(0, len(args)):
     arg = args[i]
 
     if arg == '--list-filters':
-        effects_files = os.listdir("filters")
-        print("here's the effects list:")
-        for file in effects_files:
-            if file[0] != "_":
-                print(f"{file}")
+        config.get_filter_list()
 
     if arg == '--config-file':
         try:
@@ -33,6 +29,7 @@ for i in range(0, len(args)):
         try:
             # List of files
             files = os.listdir(input_directory)
+            directories.create_directory(output_directory)
         except FileNotFoundError as e:
             print(f"Specified directory path cannot be found: {input_directory} ")
 
@@ -110,4 +107,3 @@ try:
 
 except NameError as e:
     print("Enter correct directory")
-
