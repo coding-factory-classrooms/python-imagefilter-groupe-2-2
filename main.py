@@ -67,9 +67,9 @@ for i in range(0, len(args)):
                 dict_effects[effect_name] = effect_parameters[1]
             else:
                 try:
-                    if re.match('[0-9]+', effect_parameters[1]):
+                    if re.match('[\+\-]?[0-9]+', effect_parameters[1]):
                         effect_value = int(effect_parameters[1])
-
+                        print(effect_value)
                         # Manage negative error
                         if effect_value < 0:
                             print(f"Expected value for {effect_name} has to be positive (>0), so we changed your value from {effect_value} to {effect_value * -1} ")
