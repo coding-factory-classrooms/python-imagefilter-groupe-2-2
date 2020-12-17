@@ -8,6 +8,11 @@ output_path = 'assets/output/'
 
 
 def filter(filename):
+    """
+
+    :param filename: the name of the file we want to modify
+    :return:
+    """
     file_exist = Filesystem.isFileValid(input_path + filename)
     if file_exist:
         filter_name = 'erroded_'

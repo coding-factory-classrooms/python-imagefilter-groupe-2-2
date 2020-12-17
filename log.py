@@ -3,6 +3,12 @@ from datetime import datetime
 
 # log action in the log.txt file and also print it in the console
 def log_filter(file_name, filter_name):
+    """ write a message in the console and the log.txt file with the action we do
+
+    :param file_name: the name of the file we want to modify
+    :param filter_name: the name of the effect we want to apply
+    """
+
     # we're taking the today date
     now = datetime.now()
     # we choose the date display
@@ -16,6 +22,12 @@ def log_filter(file_name, filter_name):
 
 # log error in the log.txt file and also print it in the console
 def log_error(filter_name, file_name):
+    """ write an error message in the console and the log.txt file with the action we wanted to do
+
+    :param filter_name: the name of the file we wanted to modify
+    :param file_name: the name of the effect we wanted to apply
+    """
+
     # we're taking the today date
     now = datetime.now()
     # we choose the date display
