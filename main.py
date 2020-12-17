@@ -17,7 +17,11 @@ for i in range(0, len(args)):
     if arg == '--list-filters':
         config.get_filter_list()
 
+for i in range(0, len(args)):
+    arg = args[i]
+
     if arg == '--config-file':
+        dict_effects = {}
         try:
             config_file = args[i+1]
             general_settings = config.get_general_settings(config_file)
@@ -48,6 +52,7 @@ for i in range(0, len(args)):
         directories.create_directory(output_directory)
 
     if arg == '--filters':
+        dict_effects = {}
         # Get arguments from command line
         effects = args[i + 1]
 
@@ -107,3 +112,4 @@ try:
 
 except NameError as e:
     print("Enter correct directory")
+
