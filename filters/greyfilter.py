@@ -12,7 +12,7 @@ def filter(filename):
         filter_name = 'Gray'
         new_prefix = 'new_'
         try:
-            image = cv2.imread(output_path + "new_" + filename)
+            image = cv2.imread(output_path + new_prefix + filename)
             grayImg = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             cv2.imwrite(output_path + new_prefix + filename, grayImg)
             log.log_filter(filename, filter_name)

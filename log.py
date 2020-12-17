@@ -24,11 +24,35 @@ def log_error(filter_name, file_name):
     print(f"{timestamp} Your input value was not referenced so, cannot apply {filter_name} filter on {file_name}\n")
     # printing error in the log.txt file
     with open("log.txt", "a") as f:
-        f.write(f"{timestamp} Your input value was not referenced so, cannot apply {filter_name} filter on {file_name}\n")
+        f.write(
+            f"{timestamp} Your input value was not referenced so, cannot apply {filter_name} filter on {file_name}\n")
+
+
+def directory_created(output):
+    # we're taking the today date
+    now = datetime.now()
+    # we choose the date display
+    timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
+    # printing action in the console
+    print(f"{timestamp} Successfully created the directory {output}\n")
+    # printing action in the log.txt file
+    with open("log.txt", "a") as f:
+        f.write(f"{timestamp} Successfully created the directory {output}\n")
+
+
+def directory_failed(output):
+    # we're taking the today date
+    now = datetime.now()
+    # we choose the date display
+    timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
+    # printing action in the console
+    print(f"{timestamp} Creation of the directory {output} failed.\n")
+    # printing action in the log.txt file
+    with open("log.txt", "a") as f:
+        f.write(f"{timestamp} Creation of the directory {output} failed.\n")
 
 
 # to clean the log.txt file
 def log_clean():
     with open("log.txt", "w") as f:
         f.write(f" ")
-

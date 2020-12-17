@@ -13,7 +13,7 @@ def filter(filename, value):
         new_prefix = 'new_'
         if value != 0:
             try:
-                image = cv2.imread(output_path+"new_" + filename)
+                image = cv2.imread(output_path+new_prefix + filename)
                 blurImg = cv2.GaussianBlur(image, (value, value), 0)
                 cv2.imwrite(output_path + new_prefix + filename, blurImg)
                 log.log_filter(filename, filter_name)

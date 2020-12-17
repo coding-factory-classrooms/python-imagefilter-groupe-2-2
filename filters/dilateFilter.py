@@ -14,7 +14,7 @@ def filter(filename, value):
         new_prefix = 'new_'
         if value != 0:
             try:
-                image = cv2.imread(output_path+"new_" + filename)
+                image = cv2.imread(output_path+new_prefix+ filename)
                 kernel = np.ones((value, value), np.uint8)
                 dilateImg = cv2.dilate(image, kernel, iterations=1)
                 cv2.imwrite(output_path + new_prefix + filename, dilateImg)

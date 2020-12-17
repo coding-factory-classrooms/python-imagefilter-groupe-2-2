@@ -46,3 +46,37 @@
 2020/12/17 10:33:20 the robin.jpg file has been modified by Gray effects
 2020/12/17 10:33:20 the zizou.jpg file has been modified by Dilate effects
 2020/12/17 10:33:20 the zizou.jpg file has been modified by Gray effects
+2020/12/17 10:34:00 the arouf.jpg file has been modified by Blur effects
+2020/12/17 10:34:00 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 10:34:00 the kekra.jpg file has been modified by Blur effects
+2020/12/17 10:34:00 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 10:34:00 the robin.jpg file has been modified by Blur effects
+2020/12/17 10:34:00 the robin.jpg file has been modified by Dilate effects
+2020/12/17 10:34:00 the zizou.jpg file has been modified by Blur effects
+2020/12/17 10:34:00 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 10:43:22 the arouf.jpg file has been modified by Blur effects
+2020/12/17 10:43:22 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 10:43:22 the kekra.jpg file has been modified by Blur effects
+2020/12/17 10:43:22 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 10:43:22 the robin.jpg file has been modified by Blur effects
+2020/12/17 10:43:22 the robin.jpg file has been modified by Dilate effects
+2020/12/17 10:43:22 the zizou.jpg file has been modified by Blur effects
+2020/12/17 10:43:22 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 10:43:40 Successfully created the directory assets/output/
+2020/12/17 10:43:40 the arouf.jpg file has been modified by Blur effects
+2020/12/17 10:43:40 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 10:43:40 the kekra.jpg file has been modified by Blur effects
+2020/12/17 10:43:40 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 10:43:40 the robin.jpg file has been modified by Blur effects
+2020/12/17 10:43:40 the robin.jpg file has been modified by Dilate effects
+2020/12/17 10:43:40 the zizou.jpg file has been modified by Blur effects
+2020/12/17 10:43:40 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 10:44:09 Successfully created the directory assets/output/
+2020/12/17 10:44:09 the arouf.jpg file has been modified by Blur effects
+2020/12/17 10:44:09 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 10:44:09 the kekra.jpg file has been modified by Blur effects
+2020/12/17 10:44:09 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 10:44:09 the robin.jpg file has been modified by Blur effects
+2020/12/17 10:44:10 the robin.jpg file has been modified by Dilate effects
+2020/12/17 10:44:10 the zizou.jpg file has been modified by Blur effects
+2020/12/17 10:44:10 the zizou.jpg file has been modified by Dilate effects
