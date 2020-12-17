@@ -1,10 +1,9 @@
 import cv2
 import os
-from filters import dilateFilter, blurFilter, greyfilter
+from filters import dilateFilter, blurFilter, greyfilter, erodeFilter
 import directories
 import sys
 import re
-import log
 
 
 args = sys.argv
@@ -15,8 +14,11 @@ for i in range(0, len(args)):
 
         input_directory = (args[i + 1]+"/")
         #print(input_directory)
-        # List of files
-        files = os.listdir(input_directory)
+        try:
+            # List of files
+            files = os.listdir(input_directory)
+        except FileNotFoundError as e:
+            print(f"Specified directory path cannot be found: {input_directory} ")
 
     if arg == '-o':
         output_directory = (args[i + 1] + "/")
@@ -58,24 +60,27 @@ for i in range(0, len(args)):
             except IndexError as e:
                 dict_effects[effect_name] = 0
 
-for file in files:
-    try:
-        new_file = cv2.imread(input_directory+file)
-        cv2.imwrite(output_directory + "new_" + file, new_file)
-        input_path = output_directory
-        file_name = "new_" + file
+try:
+
+    for file in files:
+        try:
+            new_file = cv2.imread(input_directory+file)
+            cv2.imwrite(output_directory + "new_" + file, new_file)
+            input_path = output_directory
+            file_name = "new_" + file
 
     except cv2.error:
         log.wrong_file(file)
 
-    for key in dict_effects:
-        if key == "blur":
-            blurFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
+        for key in dict_effects:
+            if key == "blur":
+                blurFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
 
-        if key == "dilate":
-            dilateFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
+            if key == "dilate":
+                dilateFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
 
-        if key == "grayscale":
-            greyfilter.filter(file_name, input_path, output_directory)
-
+            if key == "grayscale":
+                greyfilter.filter(file_name, input_path, output_directory)
+except NameError as e:
+    print("Enter correct directory")
 

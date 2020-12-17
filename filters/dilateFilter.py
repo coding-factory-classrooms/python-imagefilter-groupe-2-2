@@ -5,6 +5,13 @@ import log
 
 
 def filter(filename, value, input_path, output_path):
+    """ took an image and dilate it, then save it in the output folder
+
+       :param filename: the name of the file we want to modify
+       :param value: the value of the effect we want to apply
+       :param input_path: the path of the file we want to modify
+       :param output_path: the path of the folder were we'll save the modified file
+       """
     fileExist = Filesystem.isFileValid(input_path + filename)
     if fileExist:
         filter_name = 'Dilate'
