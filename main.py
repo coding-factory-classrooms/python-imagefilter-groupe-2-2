@@ -12,13 +12,14 @@ for i in range(0, len(args)):
     arg = args[i]
     if arg == '-i':
 
-        input_directory = args[i + 1]
+        input_directory = (args[i + 1]+"/")
+        print(input_directory)
         # List of files
         files = os.listdir(input_directory)
 
     if arg == '-o':
-        output = args[i + 1]
-        print(output)
+        output = (args[i + 1]+"/")
+        # print(output)
 
     if arg == '--filters':
         # Get arguments from command line
@@ -57,6 +58,12 @@ for i in range(0, len(args)):
                 dict_effects[effect_name] = 0
 
 for file in files:
+    try:
+        new_file = cv2.imread(input_directory+file)
+        cv2.imwrite(output+"new_"+file, new_file)
+    except cv2.error:
+        print(f"Your file={file} is not an image")
+
     for key in dict_effects:
         if key == "blur":
             blurFilter.filter(file, int(dict_effects[key]))

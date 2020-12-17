@@ -7,9 +7,9 @@ output_path = 'assets/output/'
 def filter(filename):
     fileExist = Filesystem.isFileValid(input_path + filename)
     if fileExist == True:
-        filtername = 'gray_'
+        filtername = 'new_'
         try:
-            image = cv2.imread(input_path + filename)
+            image = cv2.imread(output_path + "new_" + filename)
             grayImg = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             cv2.imwrite(output_path + filtername + filename, grayImg)
         except cv2.error:
