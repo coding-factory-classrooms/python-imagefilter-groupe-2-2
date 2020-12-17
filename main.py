@@ -7,7 +7,6 @@ import re
 import log
 import config
 
-
 args = sys.argv
 dict_effects = {}
 
@@ -21,9 +20,13 @@ for i in range(0, len(args)):
             if file[0] != "_":
                 print(f"{file}")
 
+for i in range(0, len(args)):
+    arg = args[i]
+
     if arg == '--config-file':
+        dict_effects = {}
         try:
-            config_file = args[i+1]
+            config_file = args[i + 1]
             general_settings = config.get_general_settings(config_file)
             input_directory = config.get_input_directory(general_settings)
             output_directory = config.get_output_directory(general_settings)
@@ -33,13 +36,13 @@ for i in range(0, len(args)):
         try:
             # List of files
             files = os.listdir(input_directory)
+            directories.create_directory(output_directory)
         except FileNotFoundError as e:
             print(f"Specified directory path cannot be found: {input_directory} ")
 
     if arg == '-i':
 
-        input_directory = (args[i + 1]+"/")
-        #print(input_directory)
+        input_directory = (args[i + 1] + "/")
         try:
             # List of files
             files = os.listdir(input_directory)
@@ -51,6 +54,7 @@ for i in range(0, len(args)):
         directories.create_directory(output_directory)
 
     if arg == '--filters':
+        dict_effects = {}
         # Get arguments from command line
         effects = args[i + 1]
 
@@ -68,12 +72,14 @@ for i in range(0, len(args)):
 
                     # Manage negative error
                     if effect_value < 0:
-                        print(f"Expected value for {effect_name} has to be positive (>0), so we changed your value from {effect_value} to {effect_value * -1} ")
+                        print(
+                            f"Expected value for {effect_name} has to be positive (>0), so we changed your value from {effect_value} to {effect_value * -1} ")
                         effect_value *= -1
 
                     # Manage pair value error
                     if effect_value % 2 == 0:
-                        print(f"Expected value for {effect_name} has to be odd, so we changed your value from {effect_value} to {effect_value + 1} ")
+                        print(
+                            f"Expected value for {effect_name} has to be odd, so we changed your value from {effect_value} to {effect_value + 1} ")
                         effect_value += 1
 
                     # Input values in dict as key = effect_name and value = effect_value
@@ -89,11 +95,10 @@ for i in range(0, len(args)):
 try:
     for file in files:
         try:
-            new_file = cv2.imread(input_directory+file)
+            new_file = cv2.imread(input_directory + file)
             file_name = "new_" + file
             cv2.imwrite(output_directory + file_name, new_file)
             input_path = output_directory
-
 
             for key in dict_effects:
                 if key == "blur":
@@ -110,4 +115,3 @@ try:
 
 except NameError as e:
     print("Enter correct directory")
-
