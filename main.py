@@ -62,17 +62,20 @@ for file in files:
     try:
         new_file = cv2.imread(input_directory+file)
         cv2.imwrite(output_directory + "new_" + file, new_file)
+        input_path = output_directory
+        file_name = "new_" + file
+
     except cv2.error:
         log.wrong_file(file)
 
     for key in dict_effects:
         if key == "blur":
-            blurFilter.filter(file, int(dict_effects[key]))
+            blurFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
 
         if key == "dilate":
-            dilateFilter.filter(file, int(dict_effects[key]))
+            dilateFilter.filter(file_name, int(dict_effects[key]), input_path, output_directory)
 
         if key == "grayscale":
-            greyfilter.filter(file)
+            greyfilter.filter(file_name, input_path, output_directory)
 
 
