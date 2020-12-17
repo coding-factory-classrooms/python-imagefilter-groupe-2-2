@@ -1,9 +1,10 @@
 import os.path
 from os import path
 
+
 def isFileValid(filepath):
-    if path.exists(filepath) == True:
+    if path.exists(filepath):
         return True
 
-    else :
+    else:
         return False
