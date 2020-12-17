@@ -4,6 +4,12 @@ import log
 
 
 def filter(filename, input_path, output_path):
+    """ took an image and apply a grey filter on it, then save it in the output folder
+
+    :param filename: the name of the file we want to modify
+    :param input_path: the path of the file we want to modify
+    :param output_path: the path of the folder were we'll save the modified file
+    """
     fileExist = Filesystem.isFileValid(input_path + filename)
     if fileExist:
         filter_name = 'Gray'
