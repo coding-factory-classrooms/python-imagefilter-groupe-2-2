@@ -10,9 +10,16 @@ import config
 
 args = sys.argv
 dict_effects = {}
+
 for i in range(0, len(args)):
     arg = args[i]
 
+    if arg == '--list-filters':
+        effects_files = os.listdir("filters")
+        print("here's the effects list:")
+        for file in effects_files:
+            if file[0] != "_":
+                print(f"{file}")
 
     if arg == '--config-file':
         try:
@@ -28,7 +35,6 @@ for i in range(0, len(args)):
             files = os.listdir(input_directory)
         except FileNotFoundError as e:
             print(f"Specified directory path cannot be found: {input_directory} ")
-
 
     if arg == '-i':
 
@@ -98,8 +104,10 @@ try:
 
                 if key == "grayscale":
                     greyfilter.filter(file, output_directory)
+
         except cv2.error:
             log.wrong_file(file)
+
 except NameError as e:
     print("Enter correct directory")
 
