@@ -1,9 +1,10 @@
 import cv2
 import os
-from filters import dilateFilter, blurFilter, greyfilter, erodeFilter
+from filters import dilateFilter, blurFilter, greyfilter
 import directories
 import sys
 import re
+import log
 
 
 args = sys.argv
@@ -62,7 +63,7 @@ for file in files:
         new_file = cv2.imread(input_directory+file)
         cv2.imwrite(output_directory + "new_" + file, new_file)
     except cv2.error:
-        print(f"Your file={file} is not an image")
+        log.wrong_file(file)
 
     for key in dict_effects:
         if key == "blur":

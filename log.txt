@@ -80,3 +80,66 @@
 2020/12/17 10:44:10 the robin.jpg file has been modified by Dilate effects
 2020/12/17 10:44:10 the zizou.jpg file has been modified by Blur effects
 2020/12/17 10:44:10 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:03:08 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:03:08 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:03:08 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:03:08 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:03:08 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:03:08 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:03:08 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:03:08 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:03:08 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:03:27 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:03:27 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:03:27 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:03:27 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:03:27 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:03:28 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:03:28 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:03:28 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:03:28 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:05:25 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:05:25 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:05:25 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:05:25 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:05:26 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:05:26 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:05:26 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:05:26 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:05:26 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:05:47 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:05:47 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:05:47 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:05:47 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:05:47 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:05:47 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:05:47 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:05:47 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:05:48 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:06:40 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:06:40 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:06:40 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:06:40 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:06:40 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:06:40 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:06:40 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:06:40 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:06:40 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:07:32 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:07:32 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:07:32 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:07:32 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:07:32 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:07:32 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:07:32 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:07:32 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:07:32 the zizou.jpg file has been modified by Dilate effects
+2020/12/17 11:07:51 the arouf.jpg file has been modified by Blur effects
+2020/12/17 11:07:51 the arouf.jpg file has been modified by Dilate effects
+2020/12/17 11:07:51 the kekra.jpg file has been modified by Blur effects
+2020/12/17 11:07:51 the kekra.jpg file has been modified by Dilate effects
+2020/12/17 11:07:51 the robin.jpg file has been modified by Blur effects
+2020/12/17 11:07:51 the robin.jpg file has been modified by Dilate effects
+2020/12/17 11:07:51 Your file=test.txt is not an image. Cannot apply any filter on it
+2020/12/17 11:07:51 the zizou.jpg file has been modified by Blur effects
+2020/12/17 11:07:51 the zizou.jpg file has been modified by Dilate effects

@@ -16,10 +16,10 @@ def filter(filename, value):
                 image = cv2.imread(output_path+new_prefix + filename)
                 blurImg = cv2.GaussianBlur(image, (value, value), 0)
                 cv2.imwrite(output_path + new_prefix + filename, blurImg)
-                log.log_filter(filename, filter_name)
+                log.filter_success(filename, filter_name)
             except cv2.error:
-                print(f"Your file={filename} is not an image")
+                pass
         else:
-            log.log_error(filter_name, filename)
+            log.filter_error(filter_name, filename)
     else:
         print("Your file was not found")

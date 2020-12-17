@@ -15,8 +15,8 @@ def filter(filename):
             image = cv2.imread(output_path + new_prefix + filename)
             grayImg = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             cv2.imwrite(output_path + new_prefix + filename, grayImg)
-            log.log_filter(filename, filter_name)
+            log.filter_success(filename, filter_name)
         except cv2.error:
-            print(f"Your file={filename} is not an image")
+            pass
     else:
         print("Your file was not found")
