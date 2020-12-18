@@ -1,8 +1,7 @@
 import configparser
-
+import re
 
 # Read config.ini file
-
 
 def get_general_settings(ini_file):
     config_object = configparser.ConfigParser()
@@ -48,8 +47,28 @@ def get_filter_dict(ini_file):
             dict_filters[effect_name] = effect_parameters[1]
         else:
             try:
-                effect_value = int(effect_parameters[1])
-                dict_filters[effect_name] = effect_value
+                if re.match('[\+\-]?[0-9]+', effect_parameters[1]):
+                    effect_value = int(effect_parameters[1])
+                    print(effect_value)
+                    # Manage negative error
+                    if effect_value < 0:
+                        print(
+                            f"Expected value for {effect_name} has to be positive (>0), so we changed your value from {effect_value} to {effect_value * -1} ")
+                        effect_value *= -1
+
+                    # Manage pair value error
+                    if effect_value % 2 == 0:
+                        print(
+                            f"Expected value for {effect_name} has to be odd, so we changed your value from {effect_value} to {effect_value + 1} ")
+                        effect_value += 1
+
+                    # Input values in dict as key = effect_name and value = effect_value
+                    dict_filters[effect_name] = effect_value
+
+                else:
+                    print(f'Value : "{effect_parameters[1]}" for {effect_name} is incorrect. A number is required')
+
+            # Handle index out of bond error
             except IndexError as e:
                 dict_filters[effect_name] = 0
     return dict_filters
