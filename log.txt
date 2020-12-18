@@ -453,3 +453,12 @@
 2020/12/18 09:24:03 the robin.jpg file has been modified by ZeTeam effects
 2020/12/18 09:24:03 the zizou.jpg file has been modified by Dilate effects
 2020/12/18 09:24:03 the zizou.jpg file has been modified by ZeTeam effects
+2020/12/18 09:33:15 the arouf.jpg file has been modified by Dilate effects
+2020/12/18 09:33:15 the arouf.jpg file has been modified by ZeTeam effects
+2020/12/18 09:33:15 Your file=bonjour is not an image. Cannot apply any filter on it
+2020/12/18 09:33:15 the kekra.jpg file has been modified by Dilate effects
+2020/12/18 09:33:15 the kekra.jpg file has been modified by ZeTeam effects
+2020/12/18 09:33:15 the robin.jpg file has been modified by Dilate effects
+2020/12/18 09:33:15 the robin.jpg file has been modified by ZeTeam effects
+2020/12/18 09:33:15 the zizou.jpg file has been modified by Dilate effects
+2020/12/18 09:33:16 the zizou.jpg file has been modified by ZeTeam effects

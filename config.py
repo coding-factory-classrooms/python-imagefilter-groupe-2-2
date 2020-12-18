@@ -4,6 +4,11 @@ import re
 # Read config.ini file
 
 def get_general_settings(ini_file):
+    '''
+
+    :param ini_file:
+    :return: an iterable dictionary we call general since it contains all [general] settings in the ini file
+    '''
     config_object = configparser.ConfigParser()
     config_object.read(ini_file)
     general = config_object["general"]
@@ -11,21 +16,41 @@ def get_general_settings(ini_file):
 
 
 def get_input_directory(general_settings):
+    '''
+
+    :param general_settings: a dict containing all the infos we need
+    :return: the input directory path
+    '''
     input_directory_path = general_settings["input_dir"]
     return input_directory_path + '/'
 
 
 def get_output_directory(general_settings):
+    '''
+
+    :param general_settings: a dict containing all the infos we need
+    :return: the output directory path
+    '''
     output_directory_path = general_settings["output_dir"]
     return output_directory_path + '/'
 
 
 def get_log_file(general_settings):
+    '''
+
+    :param general_settings:
+    :return: the log file
+    '''
     log_file = general_settings["log_file"]
     return log_file
 
 
 def get_filter_dict(ini_file):
+    '''
+
+    :param ini_file:
+    :return: a dict_of_filters with the filters as keys and the filters value as value.
+    '''
     config_object = configparser.ConfigParser()
     config_object.read(ini_file)
 
@@ -43,13 +68,16 @@ def get_filter_dict(ini_file):
     for effect in list_of_filters:
         effect_parameters = effect.split(':')
         effect_name = effect_parameters[0]
+
+        # Check if the effect is a message. We do this before the regex check to avoid errors
         if effect_name == "message":
             dict_filters[effect_name] = effect_parameters[1]
         else:
             try:
+                # Do a regex check to make sure we give an int
                 if re.match('[\+\-]?[0-9]+', effect_parameters[1]):
                     effect_value = int(effect_parameters[1])
-                    print(effect_value)
+
                     # Manage negative error
                     if effect_value < 0:
                         print(
@@ -75,6 +103,10 @@ def get_filter_dict(ini_file):
 
 
 def get_filter_list():
+    '''
+
+    :return: print all the effects available at the time
+    '''
     config_object = configparser.ConfigParser()
     config_object.read('imagefilter.ini')
 
@@ -92,6 +124,11 @@ def get_filter_list():
     print()
 
 def get_message(ini_file):
+    '''
+
+    :param ini_file: a config .ini file
+    :return: a function to get the message contained in the .ini file
+    '''
     config_object = configparser.ConfigParser()
     config_object.read(ini_file)
 
